@@ -146,6 +146,10 @@ img {
     background-size: .65em auto, 100%;
 }
 
+.hide {
+    display: none;
+}
+
 .showcase-form select:focus {
     outline: none;
 }

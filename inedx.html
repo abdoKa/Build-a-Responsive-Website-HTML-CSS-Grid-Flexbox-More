@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Developer Space</title>
 </head>
@@ -48,7 +49,7 @@
                     </div>
                     <div class="form-control">
                         <label for="developer-type">choose your career</label>
-                        <select required>
+                        <select required id="selectId">
                            <option value="">I'am a... </option>
                            <option value="front-end">Front-End Developer</option>
                            <option value="back-end">Back-End Developer</option>
@@ -56,15 +57,31 @@
                            <option value="devops">DevOps</option>
                            <option value="software-developer">Software Developer</option>
                            <option value="mobile-dev">Mobile Developer</option>
-                           <option value="other">Other</option>
+                           <option value="other" id="other-is-selected">Other</option>
                        </select>
-
+                    </div>
+                    <div class="form-control">
+                        <input type="text" name="other" placeholder="Other..." required style="display: none;" id="other-input">
                     </div>
                     <input type="submit" value="Send" class="btn btn-primary">
                 </form>
             </div>
         </div>
     </section>
+    <!-- Stats  -->
+    <section class="stats">
+
+    </section>
+
+    <script>
+        $('#selectId').change(function() {
+            if ($('select option:selected').text() == "Other") {
+                $('#other-input').show();
+            } else {
+                $('#other-input').hide();
+            }
+        });
+    </script>
 </body>
 
 </html>
