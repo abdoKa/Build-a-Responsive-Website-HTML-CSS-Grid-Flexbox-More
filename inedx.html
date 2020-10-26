@@ -77,6 +77,7 @@
         $('#selectId').change(function() {
             if ($('select option:selected').text() == "Other") {
                 $('#other-input').show();
+                $('.showcase-form').addClass('add-height');
             } else {
                 $('#other-input').hide();
             }
