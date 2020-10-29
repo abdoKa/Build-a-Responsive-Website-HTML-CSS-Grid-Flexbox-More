@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Cousine:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
-    --second-color: #1b262c;
+    --dark-color: #1b262c;
     --primary-color: #ffffff;
     --blue-color: #3282b8;
 }
@@ -23,7 +23,6 @@ ul {
 
 a {
     text-decoration: none;
-    color: var(--second-color);
 }
 
 h1,
@@ -47,7 +46,7 @@ img {
 
 .navbar {
     background-color: var(--blue-color);
-    color: var(--second-color);
+    color: var(--primary-color);
     height: 70px;
 }
 
@@ -204,4 +203,25 @@ img {
 .cli .grid>*:first-child {
     grid-column: 1 / span 2;
     grid-row: 1 / span 2;
+}
+
+
+/* Programming  */
+
+.programming .grid {
+    grid-template-columns: 4fr 3fr;
+    column-gap: 30px;
+}
+
+
+/* Languages  */
+
+.languages .flex {
+    flex-wrap: wrap;
+}
+
+.languages .card {
+    text-align: center;
+    margin: 18px 10px;
+    padding: 13px;
 }

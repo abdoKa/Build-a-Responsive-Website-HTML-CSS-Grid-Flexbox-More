@@ -46,6 +46,52 @@
     -o-transform: scale(.98);
 }
 
+
+/* Backgrounds & colors buttons  */
+
+.bg-primary,
+.btn-primary {
+    background-color: var(--blue-color);
+    color: var(--primary-color);
+}
+
+.bg-dark,
+.btn-dark {
+    background-color: var(--dark-color);
+    color: var(--primary-color);
+}
+
+
+/* TEXT sizes  */
+
+.lead {
+    font-size: 20px;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+xl {
+    font-size: 4rem;
+}
+
+.rounded {
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
 .text-center {
     text-align: center;
 }
