@@ -244,6 +244,14 @@ img {
     -o-transform: translateY(-15px);
 }
 
+.latest-main .card>img {
+    margin-right: 20px;
+}
+
+.latest-main .grid {
+    padding: 30px;
+}
+
 
 /* Footer  */
 
